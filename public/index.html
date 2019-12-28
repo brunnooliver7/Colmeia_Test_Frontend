@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Professor App</title>
+        <link rel='stylesheet' href='app.css'>
+
+        <!-- TESTE BACK4APP -->
+        <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js">
+            Parse.initialize("2AgEOqJCePhIt850hE79A4Cl8jDhccKQ8JP6K5mN","zCP3jpAKRXTTK5XcOTIEu045nj3aRBjZd0UVXtxx");
+            Parse.serverURL = 'https://parseapi.back4app.com/'
+            var user = new Parse.User();
+            user.save({
+                username: document.getElementById("username").value,
+                email: document.getElementById("email").value,
+                password: document.getElementById("password").value
+                }).then(function(response) {
+                alert('New object create with success! ObjectId: ' + response.id + ', '+ user.get('username'));
+                }).catch(function(error) {
+                alert('Error: ' + error.message);
+            });
+        </script>
+        
+    </head>
+    <body>
+        <div id="app" class='container'></div>
+        <script src='app.js'></script></script>
+    </body>
+</html>
