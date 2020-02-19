@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700&v=2e29b3793a037344f275c6bf7a6f353c');
+
+body {
+    background: #fff;
+    font-family: Raleway;
+    line-height: 1.42857143;
+}
+
+.professor-form {
+    display: grid;
+    width: auto;
+    max-width: 800px;
+}
+
+.search-form {
+    padding-bottom: 20px;
+    width: auto;
+}
+
+.search-btn {
+    margin-left: 5px;
+    text-align: right;
+}
+
+.card {
+    display: grid;
+    width: 900px;
+    font-size: 14px;
+    border: 1px solid #e3e3e3;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    background-color:#fff;
+    transition: all .3s;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0rgba(0,0,0,.08);
+    width: auto;
+    max-width: 800px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+}
+
+.top-container {
+    display: grid;
+    grid-template-columns: 120px 60% 1fr;
+    grid-gap: 10px;
+}
+
+.card-img {   
+    top: 15px;
+    position: relative;
+    border-radius: 50%;
+    border: solid 5px #cac5c5;
+}
+
+.middle-container {
+    height: auto;
+    font-size: 14px;  
+    text-align: left;  
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.professor-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #303030;
+    margin-left: 5px;
+}
+
+.professor-disciplinas-title {
+    font-size: 16px;
+    color: #303030;
+    margin: 10px 0 5px 5px;
+}
+
+.professor-disciplina-itens {
+    display: inline-block;
+    border: 1px solid #ff8008;
+    background-color: #fff;
+    color: #ff8008;
+    padding: 3px 13px;
+    margin: 3px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.right-container {
+    text-align: center;
+    display: grid;
+    vertical-align: middle;
+    color: #989898;
+}
+
+.professor-rating{
+    position: relative;
+    top: 15px;
+    text-align: right;
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.professor-star {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+
+.curriculo-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+
+hr {
+    background-color: #ff8008;
+    height: 1px;
+    width: 60px;
+    margin: 0px 0px 0px -10px;
+}
+
+.curriculo-body {
+    font-size: 16px;
+    color:#8b8b8b;
+}
+
+.bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+}
+
+.professor-location {
+    position: relative;
+    text-align: left;
+    margin: 5px 0;
+    color: #303030;
+}
+
+.professor-select {
+    border: 2px solid #ff8008;
+    border-radius: 5px;
+    background-color:#ff8008;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 25px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+    margin-right: 5px 0 0 0;
+}
+
+.professor-select:hover {
+    background-color:#fff;
+    color:#ff8008;
+}
