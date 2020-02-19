@@ -15,7 +15,7 @@ class App extends Component {
           <nav className='navbar navbar-inverse bg-inverse'>
             <div className='container'>
               <div className='navbar-header'>
-                <a className='navbar-brand' href='/professores'>
+                <a className='navbar-brand' href='/'>
                   <i className='fa fa-graduation-cap'></i> Professor App
                 </a>
               </div>

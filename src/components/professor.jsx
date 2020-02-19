@@ -6,7 +6,7 @@ import ProfessorForm from './professorForm'
 import Card from './card'
 import '.././app.css'
 
-const URL = 'https://colmeiatest.herokuapp.com/professores'
+const URL = 'http://localhost:4000/professores'
 
 export default class Professor extends Component {
     
@@ -31,7 +31,7 @@ export default class Professor extends Component {
 
     handleChange(event) {
         var pesquisa = event.target.value
-        var URLsearch = URL.concat('?nome=', pesquisa)
+        var URLsearch = URL.concat('/?nome=', pesquisa)
         axios.get(URLsearch).then(resp => {
             this.setState({...this.state, list: resp.data})
         })
